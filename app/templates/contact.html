@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<h1> Contact </h1> <hr>
+
+  <p> Please fill out the form to contact the webiste's owner</p>
+
+  <form action="{{url_for('contact')}}" method = "post">
+    <strong> Name</strong> <span>(Required)</span>: <br><br>
+      Please enter your full name <br><br>
+     <input type="text" name="Name" style="height:20px;width:200px"><br><br>
+
+     <strong>E-mail</strong> <span>(Required)</span>: <br><br>
+      Please enter your email address<br><br>
+     <input type="text" name="E-mail" style="height:20px;width:200px"><br><br>
+
+    <strong> Subject</strong> <span>(Required)</span>: <br><br>
+      Please enter the subject of your message<br><br>
+     <input type="text" name="Subject" style="height:20px;width:200px"><br><br>
+
+
+
+      <strong>Message</strong> <span>(Required)</span>: <br><br>
+      Please enter the message you would like to send<br><br>
+     <textarea name="Message" style="height:100px;width:330px"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+
+
+  </form>
+
+
+
+
+{% endblock %}
